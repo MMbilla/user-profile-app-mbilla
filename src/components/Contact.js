@@ -1,25 +1,22 @@
-// src/Contact.js
+// src/components/Contact.js
 import React from "react";
 
-function Contact() {
+function ContactForm() {
   return (
     <div>
-      <h1>Kontakt</h1>
+      <h3>Kontaktformular</h3>
       <form>
-        <label>
-          Name:
-          <input type="text" name="name" />
-        </label>
+        Name: <input type="text" name="name" placeholder="Ihr Name" />
         <br />
-        <label>
-          Nachricht:
-          <textarea name="message" />
-        </label>
+        Nachricht:
+        <textarea name="message" placeholder="Ihre Nachricht" />
         <br />
-        <button type="submit">Senden</button>
+        <button type="submit" className="btn btn-primary">
+          Absenden
+        </button>
       </form>
     </div>
   );
 }
 
-export default Contact;
+export default ContactForm;
